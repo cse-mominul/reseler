@@ -9,7 +9,7 @@ const MyOrders = () => {
     const { data: products } = useQuery({
         queryKey: ['bookingData', user?.email],
         queryFn: async () => {
-            const res = await fetch(`https://used-product-laptop-market-server.vercel.app/bookingData?email=${user?.email}`, {
+            const res = await fetch(`https://moresarver.vercel.app/collections`, {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('Access-token')}`
                 }
@@ -38,9 +38,9 @@ const MyOrders = () => {
                             products.map((product, i) => (
                                 <tr key={product._id}>
                                     <th>{i + 1}</th>
-                                    <th> {product.product_name} </th>
-                                    <th> {product.brand_name} </th>
-                                    <th> {product.product_price} </th>
+                                    <th> {product.name} </th>
+                                    <th> {product.brand} </th>
+                                    <th> Tk :{product.price} </th>
                                     <th>
                                         <button className="btn btn-sm btn-outline">bay Now</button>
                                     </th>
