@@ -9,7 +9,7 @@ const MyProduct = () => {
     const { data: myProduct, isLoading } = useQuery({
         queryKey: ['myProduct', user?.email],
         queryFn: async () => {
-            const res = await fetch(`https://used-product-laptop-market-server.vercel.app/myProduct?email=${user?.email}`, {
+            const res = await fetch(`https://moresarver-cse-mominul.vercel.app/products`, {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('Access-token')}`
                 }
@@ -43,8 +43,8 @@ const MyProduct = () => {
                             myProduct.map((product) => (
                                 <tr key={product._id}>
                                     <th></th>
-                                    <th> {product.product_name} </th>
-                                    <th> {product.product_price} </th>
+                                    <th> {product.name} </th>
+                                    <th> {product.price} </th>
                                     <th>
                                         {" "}
                                         <button className="btn btn-sm btn-accent">
