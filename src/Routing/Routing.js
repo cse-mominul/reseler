@@ -10,6 +10,7 @@ import Blog from "../Pages/Blog/Blog";
 import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Navbar/Home";
 import Login from "../Pages/Login/Login";
+import Premimum from "../Pages/Premimum";
 import Category from "../Pages/Services/Category/Category";
 import PrivateRouter from "./PrivateRouter";
 
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
             {
                 path : '/category:id',
                 element : <Category></Category>
+            },
+            {
+                path : '/categories/1',
+                element: <Premimum></Premimum>
+
             }
         
         ]

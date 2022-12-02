@@ -5,17 +5,17 @@ const Categoris = () => {
 
  const services = [
     {
-        id : 1,
+        _id : 1,
         name : "Premium Phonnes",
         img : "https://www.91-cdn.com/hub/wp-content/uploads/2022/11/Oppo-Reno-9-Pro-Plus.png"
     },
     {
-        id : 2,
+        _id : 2,
         name : "Midrange Phones",
         img : "https://fairmartslive.s3.ap-south-1.amazonaws.com/public/assets/images/thumbnails/fairmart-lafzwl8oXo.png"
     },
     {
-        id : 3,
+        _id : 3,
         name : "Low Buduget Phones",
         img : "https://www.bgr.in/wp-content/uploads/2022/08/pictures144234-v7-oneplus-10-pro-mobile-phone-large-1.jpg"
     }

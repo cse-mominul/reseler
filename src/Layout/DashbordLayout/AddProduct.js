@@ -43,7 +43,7 @@ const AddProduct = () => {
                         time: time,
                         productDetails: data.productDetails,
                     }
-                    fetch(`http://localhost:5000/collections`, {
+                    fetch(`https://moresarver-cse-mominul.vercel.app/collections`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
