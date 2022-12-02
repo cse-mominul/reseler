@@ -8,7 +8,7 @@ const AllBayer = () => {
     const { data: buyers = [], isLoading } = useQuery({
         queryKey: ["bayer", user?.email],
         queryFn: async () => {
-            const res = await fetch(`https://used-product-laptop-market-server.vercel.app/bayer?email=${user?.email}`, {
+            const res = await fetch(`https://moresarver-cse-mominul.vercel.app/byers`, {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('Access-token')}`
                 }

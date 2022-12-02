@@ -43,7 +43,7 @@ const AddProduct = () => {
                         time: time,
                         productDetails: data.productDetails,
                     }
-                    fetch(`https://used-product-laptop-market-server.vercel.app/allProduct?email=${user?.email}`, {
+                    fetch(`http://localhost:5000/collections`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -129,7 +129,7 @@ const AddProduct = () => {
                     <div className="form-control w-full">
                         <label className="label"> <span className="label-text">Image</span></label>
                         <input type="file" {...register("image", {
-                            required: "Image is Required"
+                           
                         })} className="input input-bordered w-full" placeholder="Product image" />
                         {errors.image && <p className='text-red-600'>{errors.image.message}</p>}
                     </div>
