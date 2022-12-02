@@ -4,6 +4,7 @@ import Blog from "../Pages/Blog/Blog";
 import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Navbar/Home";
 import Login from "../Pages/Login/Login";
+import Category from "../Pages/Services/Category/Category";
 
 const router = createBrowserRouter([
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path : '/category:id',
+                element : <Category></Category>
             }
         
         ]
